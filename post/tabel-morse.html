@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="id">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabel Morse - Daffabot</title>
+</head>
+<body>
+<div class="row">
+<div class="columns small-12">
+<h1>Tabel Morse</h1>
+<table class="dotdash" border="1">
+<tbody><tr>
+<th>Letter</th>
+<th>Morse</th>
+</tr>
+<tr>
+<td><span class="morse tile">A</span></td>
+<td>.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">B</span></td>
+<td>-...</td>
+</tr>
+<tr>
+<td><span class="morse tile">C</span></td>
+<td>-.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">D</span></td>
+<td>-..</td>
+</tr>
+<tr>
+<td><span class="morse tile">E</span></td>
+<td>.</td>
+</tr>
+<tr>
+<td><span class="morse tile">F</span></td>
+<td>..-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">G</span></td>
+<td>--.</td>
+</tr>
+<tr>
+<td><span class="morse tile">H</span></td>
+<td>....</td>
+</tr>
+<tr>
+<td><span class="morse tile">I</span></td>
+<td>..</td>
+</tr>
+<tr>
+<td><span class="morse tile">J</span></td>
+<td>.---</td>
+</tr>
+<tr>
+<td><span class="morse tile">K</span></td>
+<td>-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">L</span></td>
+<td>.-..</td>
+</tr>
+<tr>
+<td><span class="morse tile">M</span></td>
+<td>--</td>
+</tr>
+<tr>
+<td><span class="morse tile">N</span></td>
+<td>-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">O</span></td>
+<td>---</td>
+</tr>
+<tr>
+<td><span class="morse tile">P</span></td>
+<td>.--.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Q</span></td>
+<td>--.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">R</span></td>
+<td>.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">S</span></td>
+<td>...</td>
+</tr>
+<tr>
+<td><span class="morse tile">T</span></td>
+<td>-</td>
+</tr>
+<tr>
+<td><span class="morse tile">U</span></td>
+<td>..-</td>
+</tr>
+<tr>
+<td><span class="morse tile">V</span></td>
+<td>...-</td>
+</tr>
+<tr>
+<td><span class="morse tile">W</span></td>
+<td>.--</td>
+</tr>
+<tr>
+<td><span class="morse tile">X</span></td>
+<td>-..-</td>
+</tr>
+<tr>
+<td><span class="morse tile">Y</span></td>
+<td>-.--</td>
+</tr>
+<tr>
+<td><span class="morse tile">Z</span></td>
+<td>--..</td>
+</tr>
+</tbody></table>
+<br>
+<table class="dotdash" border="1">
+<tbody><tr>
+<th>Digit</th>
+<th>Morse</th>
+</tr>
+<tr>
+<td><span class="morse tile">0</span></td>
+<td>-----</td>
+</tr>
+<tr>
+<td><span class="morse tile">1</span></td>
+<td>.----</td>
+</tr>
+<tr>
+<td><span class="morse tile">2</span></td>
+<td>..---</td>
+</tr>
+<tr>
+<td><span class="morse tile">3</span></td>
+<td>...--</td>
+</tr>
+<tr>
+<td><span class="morse tile">4</span></td>
+<td>....-</td>
+</tr>
+<tr>
+<td><span class="morse tile">5</span></td>
+<td>.....</td>
+</tr>
+<tr>
+<td><span class="morse tile">6</span></td>
+<td>-....</td>
+</tr>
+<tr>
+<td><span class="morse tile">7</span></td>
+<td>--...</td>
+</tr>
+<tr>
+<td><span class="morse tile">8</span></td>
+<td>---..</td>
+</tr>
+<tr>
+<td><span class="morse tile">9</span></td>
+<td>----.</td>
+</tr>
+</tbody></table>
+<br>
+<table class="dotdash" border="1" id="punctuation">
+<tbody><tr>
+<th>Punctuation Mark</th>
+<th>Morse</th>
+</tr>
+<tr>
+<td><span class="morse tile" data-morse="........">Error</span> (also <span class="morse tile" data-morse="........">&lt;HH&gt;</span>)</td>
+<td>........</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-morse=".-...">&amp;</span> Ampersand</td>
+<td>.-...</td>
+</tr>
+<tr>
+<td><span class="morse tile">'</span> Apostrophe</td>
+<td>.----.</td>
+</tr>
+<tr>
+<td><span class="morse tile">@</span> At sign</td>
+<td>.--.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">)</span> Bracket, close (parenthesis)</td>
+<td>-.--.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">(</span> Bracket, open (parenthesis)</td>
+<td>-.--.</td>
+</tr>
+<tr>
+<td><span class="morse tile">:</span> Colon</td>
+<td>---...</td>
+</tr>
+<tr>
+<td><span class="morse tile">,</span> Comma</td>
+<td>--..--</td>
+</tr>
+<tr>
+<td><span class="morse tile">=</span> Equals sign</td>
+<td>-...-</td>
+</tr>
+<tr>
+<td><span class="morse tile">!</span> Exclamation mark <span class="has-tip space" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb4" aria-describedby="tooltip-l8w7nhtb4" title=""><span class="icon-info"></span></span></td>
+<td>-.-.--</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text=".">.</span> Full-stop (period)</td>
+<td>.-.-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="-">-</span> Hyphen</td>
+<td>-....-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-morse="-..-">×</span> Multiplication sign (also <span class="morse tile embed">x</span>)</td>
+<td>-..-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="0/0">%</span> Percentage (literally <span class="morse tile embed">0/0</span>)</td>
+<td>-----<br>-..-.<br>-----</td>
+</tr>
+<tr>
+<td><span class="morse tile">+</span> Plus sign</td>
+<td>.-.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">"</span> Quotation marks</td>
+<td>.-..-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">?</span> Question mark (query)</td>
+<td>..--..</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="/">/</span> Slash</td>
+<td>-..-.</td>
+</tr>
+</tbody></table>
+<br>
+<table class="dotdash" border="1" id="accents">
+<tbody><tr>
+<th>Accented Letter</th>
+<th>Morse</th>
+</tr>
+<tr>
+<td><span class="morse tile">À</span> <span class="morse tile">Å</span></td>
+<td>.--.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ä</span> <span class="morse tile">Ą</span> <span class="morse tile">Æ</span></td>
+<td>.-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ć</span> <span class="morse tile">Ĉ</span> <span class="morse tile">Ç</span></td>
+<td>-.-..</td>
+</tr>
+<tr><td><span class="morse tile" data-morse="----">Ch</span> <span class="morse tile">Ĥ</span> <span class="morse tile">Š</span></td>
+<td>----</td>
+</tr><tr>
+<td>
+<span class="morse tile embed">Đ</span><span class="has-tip space" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb5" aria-describedby="tooltip-l8w7nhtb5" title=""><span class="icon-info"></span></span><span class="morse tile embed">É</span><span class="has-tip space" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb6" aria-describedby="tooltip-l8w7nhtb6" title=""><span class="icon-info"></span></span><span class="morse tile">Ę</span>
+</td>
+<td>..-..</td>
+</tr>
+<tr>
+<td><span class="morse tile embed">Ð</span><span class="has-tip" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb7" aria-describedby="tooltip-l8w7nhtb7" title=""><span class="icon-info"></span></span></td>
+<td>..--.</td>
+</tr>
+<tr>
+<td><span class="morse tile">È</span> <span class="morse tile">Ł</span></td>
+<td>.-..-</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ĝ</span></td>
+<td>--.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ĵ</span></td>
+<td>.---.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ń</span> <span class="morse tile">Ñ</span></td>
+<td>--.--</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ó</span> <span class="morse tile">Ö</span> <span class="morse tile">Ø</span></td>
+<td>---.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ś</span></td>
+<td>...-...</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ŝ</span></td>
+<td>...-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Þ</span></td>
+<td>.--..</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ü</span> <span class="morse tile">Ŭ</span></td>
+<td>..--</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ź</span></td>
+<td>--..-.</td>
+</tr>
+<tr>
+<td><span class="morse tile">Ż</span></td>
+<td>--..-</td>
+</tr>
+</tbody></table>
+<br>
+<table class="dotdash" border="1">
+<tbody><tr>
+<th>Prosign <span class="has-tip" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb8" aria-describedby="tooltip-l8w7nhtb8" title=""><span class="icon-info"></span></span></th>
+<th>Morse</th>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<AA>">&lt;AA&gt;</span> New line</td>
+<td>.-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<AR>">&lt;AR&gt;</span> End of message (also <span class="morse tile embed">+</span>)</td>
+<td>.-.-.</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<AS>">&lt;AS&gt;</span> Wait</td>
+<td>.-...</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<BK>">&lt;BK&gt;</span> Break</td>
+<td>-...-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<BT>">&lt;BT&gt;</span> New paragraph (also <span class="morse tile embed">=</span>)</td>
+<td>-...-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<CL>">&lt;CL&gt;</span> Going off the air ("clear")</td>
+<td>-.-..-..</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<CT>">&lt;CT&gt;</span> Start copying</td>
+<td>-.-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<DO>">&lt;DO&gt;</span> Change to wabun code</td>
+<td>-..---</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<KA>">&lt;KA&gt;</span> Starting signal</td>
+<td>-.-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<KN>">&lt;KN&gt;</span> Invite a specific station to transmit</td>
+<td>-.--.</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<SK>">&lt;SK&gt;</span> End of transmission (also <span class="morse tile embed" data-text="<VA>">&lt;VA&gt;</span>)</td>
+<td>...-.-</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<SN>">&lt;SN&gt;</span> Understood (also <span class="morse tile embed" data-text="<SN>">&lt;VE&gt;</span>)</td>
+<td>...-.</td>
+</tr>
+<tr>
+<td><span class="morse tile" data-text="<SOS>">&lt;SOS&gt;</span> Distress message</td>
+<td>...---...</td>
+</tr>
+</tbody></table>
+<br>
+<table border="1">
+<tbody><tr>
+<th>Abbreviation</th>
+<th>Other Phrases</th>
+</tr>
+<tr>
+<td><span class="morse tile">73</span></td>
+<td>Best regards</td>
+</tr>
+<tr>
+<td><span class="morse tile">88</span></td>
+<td>Love and kisses</td>
+</tr>
+<tr>
+<td><span class="morse tile">BCNU</span></td>
+<td>Be seeing you</td>
+</tr>
+<tr>
+<td><span class="morse tile">CQ</span></td>
+<td>Call to all stations</td>
+</tr>
+<tr>
+<td><span class="morse tile">CS</span></td>
+<td>Call sign (request)</td>
+</tr>
+<tr>
+<td><span class="morse tile">CUL</span></td>
+<td>See you later</td>
+</tr>
+<tr>
+<td><span class="morse tile">DE</span></td>
+<td>From (or "this is")</td>
+</tr>
+<tr>
+<td><span class="morse tile">ES</span></td>
+<td>And</td>
+</tr>
+<tr>
+<td><span class="morse tile">K</span></td>
+<td>Over (invitation to transmit)</td>
+</tr>
+<tr>
+<td><span class="morse tile">OM</span></td>
+<td>Old man</td>
+</tr>
+<tr>
+<td><span class="morse tile">R</span></td>
+<td>Received / Roger</td>
+</tr>
+<tr>
+<td><span class="morse tile">RST</span></td>
+<td>Signal report</td>
+</tr>
+<tr>
+<td><span class="morse tile">UR</span></td>
+<td>You are</td>
+</tr>
+</tbody></table>
+<br>
+<table border="1">
+<tbody><tr>
+<th>Q Code <span class="has-tip" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtb9" aria-describedby="tooltip-l8w7nhtb9" title=""><span class="icon-info"></span></span></th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td><span class="morse tile">QRL</span></td>
+<td>The frequency is in use</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRM</span></td>
+<td>Your transmission is being interfered with (1-5)</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRN</span></td>
+<td>I am troubled by static (1-5)</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRO</span></td>
+<td>Increase transmitter power</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRP</span></td>
+<td>Decrease transmitter power</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRQ</span></td>
+<td>Send faster (...words per minute)</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRS</span></td>
+<td>Send more slowly (...words per minute)</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRT</span></td>
+<td>Stop sending</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRU</span></td>
+<td>I have nothing for you</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRV</span></td>
+<td>I am ready to copy</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRX</span></td>
+<td>Wait</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRZ</span></td>
+<td>You are being called by...</td>
+</tr>
+<tr>
+<td><span class="morse tile">QSB</span></td>
+<td>Your signals are fading</td>
+</tr>
+<tr>
+<td><span class="morse tile">QSL</span></td>
+<td>I acknowledge receipt</td>
+</tr>
+<tr>
+<td><span class="morse tile">QTH</span></td>
+<td>My location is...</td>
+</tr>
+</tbody></table>
+<br>
+<table border="1">
+<tbody><tr>
+<th>Q Code <span class="has-tip" aria-haspopup="true" data-tooltip="" data-selector="tooltip-l8w7nhtba" aria-describedby="tooltip-l8w7nhtba" title=""><span class="icon-info"></span></span></th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td><span class="morse tile">QRL?</span></td>
+<td>Is the frequency in use?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRM?</span></td>
+<td>Is my transmission being interfered with?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRN?</span></td>
+<td>Are you troubled by static?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRO?</span></td>
+<td>Shall I increase transmitter power?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRP?</span></td>
+<td>Shall I decrease transmitter power?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRQ?</span></td>
+<td>Shall I send faster?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRS?</span></td>
+<td>Shall I send more slowly?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRT?</span></td>
+<td>Shall I stop sending?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRU?</span></td>
+<td>Have you anything for me?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRV?</span></td>
+<td>Are you ready to copy?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRX?</span></td>
+<td>Should I wait?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QRZ?</span></td>
+<td>Who is calling me?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QSB?</span></td>
+<td>Are my signals fading?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QSL?</span></td>
+<td>Do you acknowledge?</td>
+</tr>
+<tr>
+<td><span class="morse tile">QTH?</span></td>
+<td>What is your location?</td>
+</tr>
+</tbody></table>
+<br>
+</div>
+</div>
+</body>
+</html>
